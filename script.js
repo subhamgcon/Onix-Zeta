@@ -59,21 +59,22 @@ class Game {
 
  
   declareWinner(isOver,p1, p2) {
-    let message
+    let message = '';
     
-    if (isOver == true && p1.health <= 0) {
-      message = `${p2.name} WINS!`;
+    if (isOver) {
+      if (p1.health <= 0) {
+        message = `${p2.name} WINS!`;
+      }
+      
+      if (p2.health <= 0) {
+        message = `${p1.name} WINS!`
+      }
     }
     
-    else if(isOver == true && p2.health <= 0) {
-      message = `${p1.name} WINS!`
-    } 
-    console.log(isOver, p1.health, p2.health)
     document.getElementById('victory').play()
     return message
   }
 
-  
   reset(p1,p2) {
     p1.health = 100
     p2.health = 100
