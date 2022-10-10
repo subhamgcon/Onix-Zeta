@@ -19,6 +19,17 @@ body {
   align-items: center;
 }
 
+.heading{
+  color: red;
+  width: 100%;
+  height: 100vh;
+  font-size: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #p1 {
   width:100px;
   height:100px;
