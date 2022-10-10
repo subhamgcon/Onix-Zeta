@@ -99,8 +99,8 @@ class Game {
 }
 
 
-let player1 = new Player('Subham', 100, 15)
-let player2 = new Player('Aharna', 100, 15)
+let player1 = new Player('Player One', 100, 15)
+let player2 = new Player('Player Two', 100, 15)
 
 
 
