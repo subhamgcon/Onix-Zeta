@@ -60,14 +60,12 @@ class Game {
  
   declareWinner(isOver,p1, p2) {
     let message = '';
-    
+
     if (isOver) {
-      if (p1.health <= 0) {
-        message = `${p2.name} WINS!`;
-      }
+      message = `${p1.name} WINS!`;
       
-      if (p2.health <= 0) {
-        message = `${p1.name} WINS!`
+      if (p1.health <= 0 || p1.health < p2.health) {
+        message = `${p2.name} WINS!`
       }
     }
     
