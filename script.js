@@ -67,6 +67,11 @@ class Game {
       if (p1.health <= 0 || p1.health < p2.health) {
         message = `${p2.name} WINS!`
       }
+      else if(p1.health == p2.health)
+      {
+        message = "Draw!!"
+      }
+    
     }
     
     document.getElementById('victory').play()
