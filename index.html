@@ -5,14 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Onix | Fight for Life</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  
-  <br>
-
-  <p class="heading">Onix-Zeta</p>
+  <h1 class="heading">Onix-Zeta</h1>
   
   <div class="menu">
     <div class="p1Info">
@@ -85,26 +83,25 @@
     </div>
 
   </div>
-  <br>
   
   <div class="resultContainer">
       <div id="result"></div>
       <button id="reset" onclick="game.reset(p1,p2)"><strong>Reset</strong></button>
   </div>
 
-<audio id="p1attack" controls style="display:none">
+<audio id="p1attack">
   <source src="sounds/fastpunch.mp3" type="audio/mpeg"> 
 </audio>
-<audio id="p1heal" controls style="display:none">
+<audio id="p1heal">
   <source src="sounds/fastheal.mp3" type="audio/mpeg"> 
 </audio>
-<audio id="p2attack" controls style="display:none">
+<audio id="p2attack">
   <source src="sounds/quickhit.mp3" type="audio/mpeg"> 
 </audio>
-<audio id="p2heal" controls style="display:none">
+<audio id="p2heal">
   <source src="sounds/quickheal.mp3" type="audio/mpeg"> 
 </audio>
-<audio id="victory" controls style="display:none">
+<audio id="victory">
   <source src="sounds/victory.mp3" type="audio/mpeg"> 
 </audio>
 
